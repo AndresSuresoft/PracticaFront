@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+
+
+}
+
+.primer-triangulo {
+    width: 0px;
+    height: 0px;
+    background-color: blue;
+    border-right: 60px solid #fff;
+    border-left: 60px solid #fff;
+    border-bottom: 100px solid blue;
+
+
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: yellow;
+    position: relative;
+    margin-top: 12px;
+
+}
+
+.container-circle {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-bottom: 90px;
+}
+
+.torre {
+    width: 120px;
+    height: 250px;
+    background-color: red;
+}
+
+.segundo-triangulo {
+    width: 0px;
+    height: 0px;
+    background-color: blue;
+    border-right: 115px solid #fff;
+    border-left: 115px solid #fff;
+    border-bottom: 155px solid blue;
+    z-index: -1;
+    margin-top: -155px;
+
+}
+
+.tercer-triangulo {
+    width: 0px;
+    height: 0px;
+    background-color: yellow;
+    border-right: 35px solid #fff;
+    border-left: 35px solid #fff;
+    border-bottom: 45px solid yellow;
+    margin-top: -50px;
+    z-index: -1;
+    rotate: 180deg;
+
+
+}
+
+.last-triangle {
+    display: flex;
+    margin-top: 48px;
+    z-index: -2;
+
+}

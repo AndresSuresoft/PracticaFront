@@ -1,0 +1,40 @@
+li:first-child {
+    color: red;
+}
+
+li:not(:last-child) {
+    padding: 13px;
+}
+
+li:nth-child(even) {
+    background-color: blue;
+}
+
+li:nth-child(3n) {
+    list-style: square;
+}
+
+li:nth-child(5) {
+    color: orange;
+}
+
+li:nth-child(6):hover+li {
+    color: chocolate;
+    background-color: wheat;
+    cursor: pointer;
+}
+
+ul:has(li:nth-child(8)) li {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+}
+
+/*
+ul:has(li:nth-child(8)) li {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+}*/
